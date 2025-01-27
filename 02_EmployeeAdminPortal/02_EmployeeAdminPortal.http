@@ -1,0 +1,6 @@
+@_02_EmployeeAdminPortal_HostAddress = http://localhost:5204
+
+GET {{_02_EmployeeAdminPortal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
