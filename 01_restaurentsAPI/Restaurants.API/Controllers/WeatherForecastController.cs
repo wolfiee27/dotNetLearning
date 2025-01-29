@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Xml.Linq;
 
 namespace Restaurants.API.Controllers;
 
@@ -44,5 +45,13 @@ public class WeatherForecastController : ControllerBase
     {
         Console.WriteLine($"Value from Query param name: {name}");
         return Ok($"qurey param name: {name}");
+    }
+
+    [HttpPost]
+    [Route("/post")]
+    public IActionResult GetValueFromPost([FromBody] int age)
+    {
+        Console.WriteLine($"Value from Query param age: {age}");
+        return Ok($"qurey param name: {age}");
     }
 }

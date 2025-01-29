@@ -10,7 +10,14 @@ GET {{Restaurants.API_HostAddress}}/weatherforecast/007/example
 
 ###
 
-@name=string
-GET {{Restaurants.API_HostAddress}}/query?name=gokul
+@name=gokul112
+GET {{Restaurants.API_HostAddress}}/query?name={{name}}
+
+###
+
+POST {{Restaurants.API_HostAddress}}/post
+Content-Type: application/json
+
+20
 
 ###
