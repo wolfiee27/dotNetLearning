@@ -9,3 +9,8 @@ Accept: application/json
 GET {{Restaurants.API_HostAddress}}/weatherforecast/007/example
 
 ###
+
+@name=string
+GET {{Restaurants.API_HostAddress}}/query?name=gokul
+
+###

@@ -37,4 +37,12 @@ public class WeatherForecastController : ControllerBase
         Console.WriteLine($"Value from route:{take}");
         return Ok("read value From route");
     }
+
+    [HttpGet]
+    [Route("/query")]
+    public IActionResult GetValueFromQuery([FromQuery] string name)
+    {
+        Console.WriteLine($"Value from Query param name: {name}");
+        return Ok($"qurey param name: {name}");
+    }
 }
