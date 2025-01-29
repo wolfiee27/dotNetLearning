@@ -29,4 +29,12 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+    [HttpGet]
+    [Route("{take}/example")]
+    public IActionResult GetValueFromRoute([FromRoute] int take)
+    {
+        Console.WriteLine($"Value from route:{take}");
+        return Ok("read value From route");
+    }
 }
