@@ -1,0 +1,41 @@
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+/[Cc]onfig/
+/obj/
+/bin/
+/wwwroot/
+
+# Visual Studio temporary files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# NuGet packages
+**/packages/
+
+# Test runner results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Code coverage results
+[Cc]overage/**/
+
+# Local history (VS)
+.history/
+
+# Ignore any local *.db files
+*.db
+
+# Ignore any local *.ldb files
+*.ldb
