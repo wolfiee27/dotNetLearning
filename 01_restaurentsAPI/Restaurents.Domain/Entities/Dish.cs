@@ -7,5 +7,7 @@ namespace Restaurents.Domain.Entities
         public string Name { get; set; } = default!;
         public string Description { get; set; } = default!;
         public decimal price { get; set; } 
+
+        public int RestaurentID { get; set; }
     }
 }
