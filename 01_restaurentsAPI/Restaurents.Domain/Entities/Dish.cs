@@ -11,7 +11,7 @@ namespace Restaurents.Domain.Entities
 
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; } = 0;
-         
+        public int? KiloCalories { get; set; }
         public int RestaurentID { get; set; }
     }
 }
