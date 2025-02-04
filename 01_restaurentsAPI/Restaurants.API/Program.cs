@@ -1,6 +1,6 @@
 using Restaurents.Infrastructure.Extensions;
 using Restaurents.Infrastructure.Seeders;
-
+using Restaurents.Application.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddInfrastructure(builder.Configuration);
-
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
