@@ -14,21 +14,4 @@ public class RestaurentDto
     public string? Street { get; set; }
     public string? PostalCode { get; set; }
     public List<DishDto>? Dishes { get; set; } = new();
-
-    public static RestaurentDto? FromEntity(Restaurent? restaurent)
-    {   
-        if (restaurent == null)
-            return null;
-        return new RestaurentDto
-        {
-            Id = restaurent.Id,
-            Name = restaurent.Name,
-            Description = restaurent.Description,
-            Category = restaurent.Category,
-            HasDelivery = restaurent.HasDelivery,
-            City = restaurent.Address?.City,
-            Street = restaurent.Address?.Street,
-            PostalCode = restaurent.Address?.PostalCode,
-        };
-    }
 }
